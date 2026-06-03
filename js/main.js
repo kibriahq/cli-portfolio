@@ -53,7 +53,7 @@ input.addEventListener('keypress', (e) => {
             clear(e);
         } else if(cmd === 'github') {
             container.appendChild(createCmd(cmd))
-            container.appendChild(createResult('p', `My Github Link: https://github.com/kibriahq`))
+            container.appendChild(createResult('p', `My Github Link: <a href="https://github.com/kibriahq" target="_blank">https://github.com/kibriahq</a>`))
             clear(e);
         } else if(cmd === 'exit') {
             if(confirm("Are you sure want to close?")) {
